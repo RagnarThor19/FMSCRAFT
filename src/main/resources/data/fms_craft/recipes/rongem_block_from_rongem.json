@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category":"misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fms_craft:rongem"
+    }
+  },
+  "result": {
+    "item": "fms_craft:rongem_block"
+  }
+}
