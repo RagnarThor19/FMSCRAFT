@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.ragnar.fms_craft.block.ModBlocks;
 import net.ragnar.fms_craft.item.ModCreativeModTabs;
 import net.ragnar.fms_craft.item.ModItems;
 import org.slf4j.Logger;
@@ -44,6 +45,8 @@ public class FMSmod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

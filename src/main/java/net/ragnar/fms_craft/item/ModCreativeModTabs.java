@@ -9,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.ragnar.fms_craft.FMSmod;
 import net.minecraft.network.chat.Component;
+import net.ragnar.fms_craft.block.ModBlocks;
 
 
 import java.awt.*;
@@ -24,6 +25,8 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RONGEM.get());
                         pOutput.accept(ModItems.RAW_RONGEM.get());
+                        pOutput.accept(ModBlocks.RONGEM_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_RONGEM_BLOCK.get());
 
                     })
                     .build());
