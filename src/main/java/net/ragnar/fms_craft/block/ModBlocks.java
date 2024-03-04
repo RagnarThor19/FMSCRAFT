@@ -25,7 +25,8 @@ public class ModBlocks {
             })));
 
     public static final RegistryObject<Block> RAW_RONGEM_BLOCK = registerBlock("raw_rongem_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
                 return 7;
             })));
 

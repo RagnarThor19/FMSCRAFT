@@ -27,6 +27,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_RONGEM.get());
                         pOutput.accept(ModBlocks.RONGEM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_RONGEM_BLOCK.get());
+                        pOutput.accept(ModItems.BLUNT_ITEM.get());
+                        pOutput.accept(ModItems.JOINT.get());
+                        pOutput.accept(ModItems.CHEESEBURGER.get());
 
                     })
                     .build());

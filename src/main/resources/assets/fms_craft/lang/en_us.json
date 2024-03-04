@@ -1,6 +1,9 @@
 {
   "item.fms_craft.rongem": "Rongem",
   "item.fms_craft.raw_rongem": "Raw Rongem",
+  "item.fms_craft.blunt":"Blunt",
+  "item.fms_craft.joint":"Joint",
+  "item.fms_craft.cheeseburger":"Cheeseburger",
 
   "block.fms_craft.rongem_block": "Block of Rongem",
   "block.fms_craft.raw_rongem_block": "Block of Raw Rongem",
