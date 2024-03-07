@@ -19,7 +19,7 @@ public class JointItem extends Item {
     public ItemStack finishUsingItem(ItemStack stack, Level world, LivingEntity entity) {
         if (!world.isClientSide && entity instanceof Player) {
             Player player = (Player) entity;
-            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 1)); // Duration and amplifier for levitation
+            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 150, 1)); // Duration and amplifier for levitation
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.PLAYER_BREATH, SoundSource.PLAYERS, 1.0F, 1.0F); // Plays a burning sound
         }
 

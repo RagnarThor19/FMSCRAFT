@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category":"misc",
+  "pattern": [
+    "/#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "/": {
+      "item": "minecraft:grass"
+    }
+  },
+  "result": {
+    "item": "fms_craft:blunt"
+  }
+}
