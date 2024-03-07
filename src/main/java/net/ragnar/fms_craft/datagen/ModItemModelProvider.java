@@ -8,6 +8,7 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.ragnar.fms_craft.FMSmod;
+import net.ragnar.fms_craft.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -16,7 +17,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        simpleItem(ModItems.RAW_RONGEM);
+        simpleItem(ModItems.RONGEM);
+        simpleItem(ModItems.BLUNT_ITEM);
+        simpleItem(ModItems.CHEESEBURGER);
+        simpleItem(ModItems.JOINT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

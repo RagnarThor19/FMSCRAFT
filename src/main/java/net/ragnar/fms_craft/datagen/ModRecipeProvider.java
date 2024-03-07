@@ -2,6 +2,7 @@ package net.ragnar.fms_craft.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -38,6 +39,24 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('S', ModItems.RONGEM.get())
                 .unlockedBy(getHasName(ModItems.RONGEM.get()), has(ModItems.RONGEM.get()))
                 .save(recipeOutput, FMSmod.MOD_ID + ":rongem_block_from_rongem");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUNT_ITEM.get())
+                .pattern("#$")
+                .define('#', Items.GRASS)
+                .define('$', Items.PAPER)
+                .unlockedBy("has_grass", has(Items.GRASS))
+                .unlockedBy("has_paper", has(Items.PAPER))
+                .save(recipeOutput, FMSmod.MOD_ID + ":blunt_item");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JOINT.get())
+                .pattern("X#$")
+                .define('#', Items.GRASS)
+                .define('$', Items.PAPER)
+                .define('X', Items.WHEAT_SEEDS)
+                .unlockedBy("has_grass", has(Items.GRASS))
+                .unlockedBy("has_paper", has(Items.PAPER))
+                .unlockedBy("has_wheat_seeds", has(Items.WHEAT_SEEDS))
+                .save(recipeOutput, FMSmod.MOD_ID + ":joint_item");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RONGEM.get(), 9)
                 .requires(ModBlocks.RONGEM_BLOCK.get())
