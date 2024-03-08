@@ -30,6 +30,12 @@ public class ModBlocks {
                 return 7;
             })));
 
+    public static final RegistryObject<Block> RONITE_BLOCK = registerBlock("ronite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
+                        return 20;
+                    })));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -7,6 +7,8 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.ragnar.fms_craft.FMSmod;
 import net.ragnar.fms_craft.block.ModBlocks;
 import net.ragnar.fms_craft.item.ModItems;
@@ -40,6 +42,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.RONGEM.get()), has(ModItems.RONGEM.get()))
                 .save(recipeOutput, FMSmod.MOD_ID + ":rongem_block_from_rongem");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModBlocks.RONITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.RONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.RONITE_INGOT.get()), has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput, FMSmod.MOD_ID + ":ronite_block_from_ronite");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUNT_ITEM.get())
                 .pattern("#$")
                 .define('#', Items.GRASS)
@@ -72,6 +82,32 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModBlocks.RONGEM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RONGEM_BLOCK.get()), has(ModBlocks.RONGEM_BLOCK.get()))
                 .save(recipeOutput, FMSmod.MOD_ID + ":rongem_from_rongem_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RONITE_INGOT.get(), 9)
+                .requires(ModBlocks.RONITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RONITE_BLOCK.get()), has(ModBlocks.RONITE_BLOCK.get()))
+                .save(recipeOutput, FMSmod.MOD_ID + ":ronite_from_ronite_block");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONGEM_STICK.get())
+                .pattern("X  ")
+                .pattern(" Z ")
+                .pattern("  V")
+                .define('X', ModBlocks.RONGEM_BLOCK.get())
+                .define('Z', Items.STICK)
+                .define('V', Blocks.GOLD_BLOCK)
+                .unlockedBy("has_rongem_block", has(ModBlocks.RONGEM_BLOCK.get()))
+                .unlockedBy("has_gold_block", has(Blocks.GOLD_BLOCK))
+                .save(recipeOutput, FMSmod.MOD_ID + "rongem_stick");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_INGOT.get())
+                .pattern("#$#")
+                .pattern("$X$")
+                .pattern("#$#")
+                .define('#', ModItems.RONGEM.get())
+                .define('$', Items.DIAMOND)
+                .define('X', ModItems.JOINT.get())
+                .unlockedBy(getHasName(ModItems.RONGEM.get()), has(ModItems.RONGEM.get()))
+                .save(recipeOutput, FMSmod.MOD_ID + "rongem_ingot");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {

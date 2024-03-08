@@ -5,9 +5,11 @@
   "item.fms_craft.joint":"Joint",
   "item.fms_craft.cheeseburger":"Cheeseburger",
   "item.fms_craft.rongem_stick": "Rongem Stick",
+  "item.fms_craft.ronite_ingot": "Ronite Ingot",
 
   "block.fms_craft.rongem_block": "Block of Rongem",
   "block.fms_craft.raw_rongem_block": "Block of Raw Rongem",
+  "block.fms_craft.ronite_block": "Ronite Block",
 
   "creativetab.fmscraft_tab": "FMS CRAFT Tab"
 }

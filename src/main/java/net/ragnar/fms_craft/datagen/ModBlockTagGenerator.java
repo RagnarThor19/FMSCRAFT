@@ -22,7 +22,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.RONGEM_BLOCK.get(),
-                        ModBlocks.RAW_RONGEM_BLOCK.get()
+                        ModBlocks.RAW_RONGEM_BLOCK.get(),
+                        ModBlocks.RONITE_BLOCK.get()
 
                 );
 
@@ -31,6 +32,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.RAW_RONGEM_BLOCK.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.RONITE_BLOCK.get());
 
 
     }

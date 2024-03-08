@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BLUNT_ITEM);
         simpleItem(ModItems.CHEESEBURGER);
         simpleItem(ModItems.JOINT);
+        simpleItem(ModItems.RONITE_INGOT);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

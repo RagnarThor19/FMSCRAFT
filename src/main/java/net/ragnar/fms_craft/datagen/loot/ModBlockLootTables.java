@@ -24,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.RONGEM_BLOCK.get());
+        this.dropSelf(ModBlocks.RONITE_BLOCK.get());
         this.add(ModBlocks.RAW_RONGEM_BLOCK.get(),
                 block -> createOreDrop(ModBlocks.RAW_RONGEM_BLOCK.get(), ModItems.RAW_RONGEM.get()));
     }

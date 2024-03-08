@@ -1,7 +1,10 @@
-// 1.20.2	2024-03-07T12:47:01.0922225	Block States: fms_craft
+// 1.20.2	2024-03-08T16:39:43.6409281	Block States: fms_craft
 14adbb6031993ae06d0b03e45befabbb69177af7 assets/fms_craft/blockstates/raw_rongem_block.json
 c238ef8c8c830470d930b22bfc8cd26631de14e4 assets/fms_craft/blockstates/rongem_block.json
+23cedfe78753542b6796f23a74e546276d856779 assets/fms_craft/blockstates/ronite_block.json
 011ef7f403f0105b807e89b3be00e6680eb7ac51 assets/fms_craft/models/block/raw_rongem_block.json
 302bb15ba8aca46a2086653c23db5cbf0ecccaeb assets/fms_craft/models/block/rongem_block.json
+d414ab7b7834dd48486f899bd799730b4b24f218 assets/fms_craft/models/block/ronite_block.json
 006118d492500fab7ef6377d21cb56bbeee30972 assets/fms_craft/models/item/raw_rongem_block.json
 7169e8b0d5aaafd9da8eb8f869813e4aec2b552b assets/fms_craft/models/item/rongem_block.json
+c55e3d187a77a86e6236e5a609b4944c6d9c7c92 assets/fms_craft/models/item/ronite_block.json

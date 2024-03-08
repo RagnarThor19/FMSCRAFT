@@ -31,6 +31,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.JOINT.get());
                         pOutput.accept(ModItems.CHEESEBURGER.get());
                         pOutput.accept(ModItems.RONGEM_STICK.get());
+                        pOutput.accept(ModItems.RONITE_INGOT.get());
+                        pOutput.accept(ModBlocks.RONITE_BLOCK.get());
+
+
 
                     })
                     .build());
