@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fms_craft:block/ronite_block"
+    }
+  }
+}

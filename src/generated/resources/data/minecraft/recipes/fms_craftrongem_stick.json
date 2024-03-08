@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "V": {
+      "item": "minecraft:gold_block"
+    },
+    "X": {
+      "item": "fms_craft:rongem_block"
+    },
+    "Z": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "X  ",
+    " Z ",
+    "  V"
+  ],
+  "result": {
+    "item": "fms_craft:rongem_stick"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rongem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fms_craft:rongem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:fms_craftrongem_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rongem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:fms_craftrongem_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}
