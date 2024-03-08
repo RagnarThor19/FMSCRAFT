@@ -33,7 +33,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RONGEM_STICK.get());
                         pOutput.accept(ModItems.RONITE_INGOT.get());
                         pOutput.accept(ModBlocks.RONITE_BLOCK.get());
-
+                        pOutput.accept(ModItems.RONITE_SWORD.get());
+                        pOutput.accept(ModItems.RONITE_PICKAXE.get());
+                        pOutput.accept(ModItems.RONITE_AXE.get());
+                        pOutput.accept(ModItems.RONITE_SHOVEL.get());
+                        pOutput.accept(ModItems.RONITE_HOE.get());
 
 
                     })

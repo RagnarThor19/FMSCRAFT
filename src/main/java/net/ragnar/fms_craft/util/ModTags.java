@@ -10,7 +10,7 @@ import net.ragnar.fms_craft.FMSmod;
 
 public class ModTags {
     public static class Blocks {
-
+        public static final TagKey<Block> NEEDS_RONITE_TOOL = tag("needs_ronite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(FMSmod.MOD_ID, name));

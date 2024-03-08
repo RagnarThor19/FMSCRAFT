@@ -11,5 +11,11 @@
   "block.fms_craft.raw_rongem_block": "Block of Raw Rongem",
   "block.fms_craft.ronite_block": "Ronite Block",
 
+  "item.fms_craft.ronite_sword":"Ronite Sword",
+  "item.fms_craft.ronite_pickaxe":"Ronite Pickaxe",
+  "item.fms_craft.ronite_axe":"Ronite Axe",
+  "item.fms_craft.ronite_shovel":"Ronite Shovel",
+  "item.fms_craft.ronite_hoe":"Ronite Hoe",
+
   "creativetab.fmscraft_tab": "FMS CRAFT Tab"
 }
