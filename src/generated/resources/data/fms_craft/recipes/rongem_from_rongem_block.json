@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fms_craft:rongem_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "fms_craft:rongem"
+  }
+}

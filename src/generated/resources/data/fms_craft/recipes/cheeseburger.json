@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:cooked_beef"
+    },
+    "X": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "X",
+    "B",
+    "X"
+  ],
+  "result": {
+    "item": "fms_craft:cheeseburger"
+  },
+  "show_notification": true
+}

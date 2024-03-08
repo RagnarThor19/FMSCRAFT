@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:grass"
+    },
+    "$": {
+      "item": "minecraft:paper"
+    },
+    "X": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "pattern": [
+    "X#$"
+  ],
+  "result": {
+    "item": "fms_craft:joint"
+  },
+  "show_notification": true
+}
