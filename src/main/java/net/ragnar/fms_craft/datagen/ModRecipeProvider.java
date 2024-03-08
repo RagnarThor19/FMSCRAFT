@@ -48,6 +48,16 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_paper", has(Items.PAPER))
                 .save(recipeOutput, FMSmod.MOD_ID + ":blunt_item");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEESEBURGER.get())
+                .pattern("X")
+                .pattern("B")
+                .pattern("X")
+                .define('X', Items.BREAD)
+                .define('B', Items.COOKED_BEEF)
+                .unlockedBy("has_bread", has(Items.BREAD))
+                .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JOINT.get())
                 .pattern("X#$")
                 .define('#', Items.GRASS)

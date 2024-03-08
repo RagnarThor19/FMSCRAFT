@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_RONGEM = ITEMS.register("raw_rongem",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RONGEM_STICK = ITEMS.register("rongem_stick",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> CHEESEBURGER = ITEMS.register("cheeseburger",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESEBURGER)));
 

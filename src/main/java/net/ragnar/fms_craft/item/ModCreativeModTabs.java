@@ -30,6 +30,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BLUNT_ITEM.get());
                         pOutput.accept(ModItems.JOINT.get());
                         pOutput.accept(ModItems.CHEESEBURGER.get());
+                        pOutput.accept(ModItems.RONGEM_STICK.get());
 
                     })
                     .build());
