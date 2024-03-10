@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "fms_craft:ronite_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "item": "fms_craft:ronite_pickaxe"
+  },
+  "show_notification": true
+}
