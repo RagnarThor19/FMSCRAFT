@@ -37,6 +37,15 @@ public class ModItems {
     public static final RegistryObject<Item> RONITE_INGOT = ITEMS.register("ronite_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RONITE_HELMET = ITEMS.register("ronite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> RONITE_CHESTPLATE = ITEMS.register("ronite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> RONITE_LEGGINGS = ITEMS.register("ronite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> RONITE_BOOTS = ITEMS.register("ronite_boots",
+            () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> CHEESEBURGER = ITEMS.register("cheeseburger",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESEBURGER)));
 

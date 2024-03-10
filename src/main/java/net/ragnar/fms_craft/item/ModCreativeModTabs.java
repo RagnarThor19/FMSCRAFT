@@ -38,6 +38,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RONITE_AXE.get());
                         pOutput.accept(ModItems.RONITE_SHOVEL.get());
                         pOutput.accept(ModItems.RONITE_HOE.get());
+                        pOutput.accept(ModItems.RONITE_HELMET.get());
+                        pOutput.accept(ModItems.RONITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.RONITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.RONITE_BOOTS.get());
 
 
                     })

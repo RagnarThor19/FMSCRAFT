@@ -77,6 +77,38 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_HELMET.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("   ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_CHESTPLATE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .pattern("   ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_LEGGINGS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" B ")
