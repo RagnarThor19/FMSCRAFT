@@ -68,6 +68,51 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("B")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_AXE.get())
+                .pattern(" XX")
+                .pattern(" BX")
+                .pattern(" B ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_SHOVEL.get())
+                .pattern(" X ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RONITE_HOE.get())
+                .pattern("XX ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.RONITE_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_ronite_ingot", has(ModItems.RONITE_INGOT.get()))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JOINT.get())
                 .pattern("X#$")
                 .define('#', Items.GRASS)
