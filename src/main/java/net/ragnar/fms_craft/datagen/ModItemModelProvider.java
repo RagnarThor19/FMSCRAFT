@@ -8,12 +8,14 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.ragnar.fms_craft.FMSmod;
+import net.ragnar.fms_craft.block.ModBlocks;
 import net.ragnar.fms_craft.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -44,6 +46,8 @@ import java.util.LinkedHashMap;
         simpleItem(ModItems.RONGEM);
         simpleItem(ModItems.BLUNT_ITEM);
         simpleItem(ModItems.CHEESEBURGER);
+        simpleItem(ModItems.KRAEKIBER);
+        simpleItem(ModItems.KRAEKIBER_SEEDS);
         simpleItem(ModItems.JOINT);
         simpleItem(ModItems.RONITE_INGOT);
 
@@ -51,6 +55,8 @@ import java.util.LinkedHashMap;
         trimmedArmorItem(ModItems.RONITE_CHESTPLATE);
         trimmedArmorItem(ModItems.RONITE_LEGGINGS);
         trimmedArmorItem(ModItems.RONITE_BOOTS);
+
+        simpleBlockItemBlockTexture(ModBlocks.LUPINA);
 
 
     }
@@ -106,4 +112,18 @@ import java.util.LinkedHashMap;
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(FMSmod.MOD_ID, "item/" + item.getId().getPath()));
     }
+
+        private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+            return withExistingParent(item.getId().getPath(),
+                    new ResourceLocation("item/handheld")).texture("layer0",
+                    new ResourceLocation(FMSmod.MOD_ID,"item/" + item.getId().getPath()));
+        }
+
+        private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+            return withExistingParent(item.getId().getPath(),
+                    new ResourceLocation("item/generated")).texture("layer0",
+                    new ResourceLocation(FMSmod.MOD_ID,"block/" + item.getId().getPath()));
+        }
+
+
 }

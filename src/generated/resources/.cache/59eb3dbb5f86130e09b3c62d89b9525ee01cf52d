@@ -1,4 +1,7 @@
-// 1.20.2	2024-03-08T16:39:43.6423021	Loot Tables
+// 1.20.2	2024-03-11T19:12:24.5107154	Loot Tables
+a4783a3498f2828f9a01d0125d842c3078d147f9 data/fms_craft/loot_tables/blocks/kraekiber_crop.json
+7a4f6390b88cf3b5b69d3acd6d49026fee54e310 data/fms_craft/loot_tables/blocks/lupina.json
+c6826ce5215377f3de2071d5ecb959d2c7903b15 data/fms_craft/loot_tables/blocks/potted_lupina.json
 c97405f2995e470b85ddac10d46ec28846bae5ad data/fms_craft/loot_tables/blocks/raw_rongem_block.json
 ab66a3a982f95016c656ff07d09f3ccc1b1e3d62 data/fms_craft/loot_tables/blocks/rongem_block.json
 098170c6e6fd6a81f2c1e5590e0b2af2762f8d0f data/fms_craft/loot_tables/blocks/ronite_block.json

@@ -19,8 +19,13 @@
 
   "item.fms_craft.ronite_helmet":"Ronite Hjalmur",
   "item.fms_craft.ronite_chestplate":"Ronite Bringa",
-  "item.fms_craft.ronite_pants":"Ronite Buxur",
+  "item.fms_craft.ronite_leggings":"Ronite Buxur",
   "item.fms_craft.ronite_boots":"Ronite Skór",
+
+  "item.fms_craft.kraekiber_seeds":"Krækiber Seeds",
+  "item.fms_craft.kraekiber":"Krækiber",
+
+  "block.fms_craft.lupina":"Lúpína",
 
   "creativetab.fmscraft_tab": "FMS CRAFT Tab"
 }

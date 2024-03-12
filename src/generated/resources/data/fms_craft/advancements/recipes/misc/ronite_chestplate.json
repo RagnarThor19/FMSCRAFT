@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ronite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fms_craft:ronite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fms_craft:ronite_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ronite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fms_craft:ronite_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -8,6 +8,10 @@ public class ModFoods {
     public static final FoodProperties CHEESEBURGER = new FoodProperties.Builder()
             .fast().nutrition(16).saturationMod(1.4F).build();
 
+    public static final FoodProperties KRAEKIBER = new FoodProperties.Builder()
+            .fast().nutrition(2).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED
+            , 200), 0.1f).saturationMod(0.2F).build();
+
     public static final FoodProperties JOINT = new FoodProperties.Builder().saturationMod(0.2F)
             .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 200), 0.8f).build();
 }

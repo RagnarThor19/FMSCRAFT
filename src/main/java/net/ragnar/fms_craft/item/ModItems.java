@@ -6,8 +6,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ragnar.fms_craft.FMSmod;
+import net.ragnar.fms_craft.block.ModBlocks;
 import net.ragnar.fms_craft.item.custom.BluntItem;
 import net.ragnar.fms_craft.item.custom.JointItem;
+import net.ragnar.fms_craft.item.custom.ModArmorItem;
 
 import java.awt.event.ItemEvent;
 
@@ -38,7 +40,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RONITE_HELMET = ITEMS.register("ronite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> RONITE_CHESTPLATE = ITEMS.register("ronite_chestplate",
             () -> new ArmorItem(ModArmorMaterials.RONITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> RONITE_LEGGINGS = ITEMS.register("ronite_leggings",
@@ -49,10 +51,16 @@ public class ModItems {
     public static final RegistryObject<Item> CHEESEBURGER = ITEMS.register("cheeseburger",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESEBURGER)));
 
+    public static final RegistryObject<Item> KRAEKIBER = ITEMS.register("kraekiber",
+            () -> new Item(new Item.Properties().food(ModFoods.KRAEKIBER)));
+
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
             () -> new JointItem(new Item.Properties().food(ModFoods.JOINT)));
     public static final RegistryObject<Item> BLUNT_ITEM = ITEMS.register("blunt",
             () -> new BluntItem(new Item.Properties().durability(1)));
+
+    public static final RegistryObject<Item> KRAEKIBER_SEEDS = ITEMS.register("kraekiber_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KRAEKIBER_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

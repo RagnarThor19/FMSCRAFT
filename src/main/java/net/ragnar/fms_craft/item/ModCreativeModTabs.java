@@ -42,6 +42,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RONITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.RONITE_LEGGINGS.get());
                         pOutput.accept(ModItems.RONITE_BOOTS.get());
+                        pOutput.accept(ModItems.KRAEKIBER_SEEDS.get());
+                        pOutput.accept(ModItems.KRAEKIBER.get());
+                        pOutput.accept(ModBlocks.LUPINA.get());
 
 
                     })
