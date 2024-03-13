@@ -45,6 +45,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.KRAEKIBER_SEEDS.get());
                         pOutput.accept(ModItems.KRAEKIBER.get());
                         pOutput.accept(ModBlocks.LUPINA.get());
+                        pOutput.accept(ModItems.FORTIES_CLUB.get());
 
 
                     })

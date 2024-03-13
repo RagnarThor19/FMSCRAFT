@@ -1,0 +1,41 @@
+{
+"rongem_break": {
+  "subtitle": "sounds.fms_craft.rongem_break",
+  "sounds": [
+    "fms_craft:rongem_break"
+  ]
+},
+"rongem_step": {
+  "subtitle": "sounds.fms_craft.rongem_step",
+  "sounds": [
+    "fms_craft:rongem_step"
+  ]
+},
+"rongem_place": {
+  "subtitle": "sounds.fms_craft.rongem_place",
+  "sounds": [
+    "fms_craft:rongem_place"
+  ]
+},
+"rongem_hit": {
+  "subtitle": "sounds.fms_craft.rongem_hit",
+  "sounds": [
+    "fms_craft:sound_block_hit"
+  ]
+},
+"rongem_fall": {
+  "subtitle": "sounds.fms_craft.rongem_fall",
+  "sounds": [
+    "fms_craft:rongem_fall"
+  ]
+},
+
+  "forties_club": {
+    "sounds": [
+      {
+        "name": "fms_craft:forties_club",
+        "stream": true
+      }
+    ]
+  }
+}

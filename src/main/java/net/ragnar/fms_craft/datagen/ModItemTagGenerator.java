@@ -25,5 +25,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.RONITE_CHESTPLATE.get(),
                         ModItems.RONITE_LEGGINGS.get(),
                         ModItems.RONITE_BOOTS.get());
+
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.FORTIES_CLUB.get());
+
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.FORTIES_CLUB.get());
     }
 }

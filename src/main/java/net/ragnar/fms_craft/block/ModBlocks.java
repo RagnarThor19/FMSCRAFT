@@ -14,6 +14,7 @@ import net.ragnar.fms_craft.FMSmod;
 import net.ragnar.fms_craft.block.custom.KraekiberCropBlock;
 import net.ragnar.fms_craft.item.ModItems;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.ragnar.fms_craft.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -22,19 +23,19 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FMSmod.MOD_ID);
 
     public static final RegistryObject<Block> RONGEM_BLOCK = registerBlock("rongem_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).sound(ModSounds.RONGEM_BLOCK_SOUNDS).lightLevel((p_50755_) -> {
                 return 14;
             })));
 
     public static final RegistryObject<Block> RAW_RONGEM_BLOCK = registerBlock("raw_rongem_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
+                    .sound(ModSounds.RONGEM_BLOCK_SOUNDS).lightLevel((p_50755_) -> {
                 return 7;
             })));
 
     public static final RegistryObject<Block> RONITE_BLOCK = registerBlock("ronite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST).lightLevel((p_50755_) -> {
+                    .sound(ModSounds.RONGEM_BLOCK_SOUNDS).lightLevel((p_50755_) -> {
                         return 20;
                     })));
 

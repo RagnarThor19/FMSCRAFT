@@ -50,6 +50,7 @@ import java.util.LinkedHashMap;
         simpleItem(ModItems.KRAEKIBER_SEEDS);
         simpleItem(ModItems.JOINT);
         simpleItem(ModItems.RONITE_INGOT);
+        simpleItem(ModItems.FORTIES_CLUB);
 
         trimmedArmorItem(ModItems.RONITE_HELMET);
         trimmedArmorItem(ModItems.RONITE_CHESTPLATE);

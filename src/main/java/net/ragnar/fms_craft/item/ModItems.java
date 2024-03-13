@@ -10,6 +10,7 @@ import net.ragnar.fms_craft.block.ModBlocks;
 import net.ragnar.fms_craft.item.custom.BluntItem;
 import net.ragnar.fms_craft.item.custom.JointItem;
 import net.ragnar.fms_craft.item.custom.ModArmorItem;
+import net.ragnar.fms_craft.sound.ModSounds;
 
 import java.awt.event.ItemEvent;
 
@@ -61,6 +62,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> KRAEKIBER_SEEDS = ITEMS.register("kraekiber_seeds",
             () -> new ItemNameBlockItem(ModBlocks.KRAEKIBER_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> FORTIES_CLUB = ITEMS.register("forties_club",
+            () -> new RecordItem(6, ModSounds.FORTIES_CLUB, new Item.Properties(). stacksTo(1), 2840));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
